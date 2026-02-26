@@ -34,7 +34,7 @@ class MainActivity : ComponentActivity() {
             PrimeraAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Column(verticalArrangement = Arrangement.SpaceEvenly) {
-                        Greeting(
+                        Greeting2(
                             name = "Android",
                             modifier = Modifier.padding(innerPadding)
                         )
@@ -52,7 +52,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
+fun Greeting2(name: String, modifier: Modifier = Modifier) {
     Text(
         text = "Hello $name!",
         modifier = modifier
@@ -91,7 +91,7 @@ fun MyColumn(modifier: Modifier = Modifier) {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun GreetingPreview2() {
     PrimeraAppTheme {
         Greeting("Android")
     }
